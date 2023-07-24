@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logos/inup logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "#">Event</a>
+                        <ul class = "dropdown">
+                            <li><a href = "#">NOC Form</a></li>
+                            <li><a href = "#">Template for Participants Poster Presentation</a></li>
+                            <li><a href = "#">Guidelines</a></li>
+                            <li><a href = "#">Hands-On Training Registration</a></li>
+                            <li><a href = "hackathon.html">Hackathon</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "system operating status.html">Facilities</a></li>
+                    <li><a href = "#">Research Proposal</a>
+                        <ul class = "dropdown">
+                            <li><a href = "#">Form for service - 1 week</a></li>
+                            <li><a href = "#">Form for Short term(Fabriction/Characterization) - 1 week to 3 month</a></li>
+                            <li><a href = "#">Form for Short term(Characterization) - 1 week to 3 month</a></li>
+                            <li><a href = "#">Form for Medium term - 3 to 24 month</a></li>
+                            <li><a href = "#">Declaration Form</a></li>
+                            <li><a href = "#">CV Format</a></li>
+                            <li><a href = "#">Laboratory Safety Form</a></li>
+                            <li><a href = "#">Guidelines</a></li>
+                            <li><a href = "#">Project list</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "#">About Us</a>
+                        <ul class = "dropdown">
+                            <li><a href = "overview.html">Overview</a></li>
+                            <li><a href = "inup team.html">Inup Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Overview</h1>
+    </section>
+
+
+
+    <section class="overview">
+        <div class="row">
+            <div class="overview-col">
+                <h2>About</h2>
+                <p>This workshop is being organized both for familiarization and interaction of the participants with faculty members of IITKGP.<br>
+                    Online applications are invited from interested researchers, students (B.Tech 3rd year onwards, M.Sc., M.Tech., PhD, postdoc) and faculty members from academia and R&D laboratories and people from industries for participation in this workshop.<br>
+                    The technical programme includes:-<br>
+                    Familiarization of:<br>
+                    • Broad area of Nano-fabrication and characterization.<br>
+                    • On-going research activities at IITKGP in Nanoelectronics domain.<br>
+                    • Overview of infrastructure at IITKGP.<br>
+                    • Availing IITKGP research facilities through INUP-i2i</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="overview-col">
+                <h2>Details</h2>
+                <p>• The workshop will be conducted in virtual mode through IT enabled platforms. The link will be sent to the selected participants.<br>
+                    • During the workshop the participants are expected to present PPT (1-2 slides, template of a poster given on the website) which describes his/her research area of interest and plans of research work under INUP-i2i at IIT KGP. The proposals will be provisionally selected for research support at IIT Kharagpur on the basis of your poster presentation.<br>
+                    • An MCQ based Quiz would be conducted based on the topics which are covered during the 3 day workshop.<br>
+                    • Please submit NOC form(
+                        <a class="download" href="http://inup.iitkgp.ac.in/inup/proposal_templates/NOC-Workshop.doc" target="blank">
+                        <span class="how-to-register">Download</span></a>
+                    ) duly signed from the Head of the Institution/Supervisor.<br>
+                    • Start date of online application: 4th January, 2023.<br>
+                    • Last date of online application: 6th February, 2023.<br>
+                    • <a class="download" href="http://www.inup-i2i.in/inup_wrapper/How%20to%20Register%20for%20a%20Workshop.pdf" target="blank">
+                      <span class="how-to-register">How to Register for the workshop.</span></a><br>
+                    • Selected participants will be notified through email on 1st February, 2023.<br>
+                    *Industrial participants,please contact Email- inup.iitkgp@gmail.com</p>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <section class="footer">
+        <h5>Learn More</h5>
+        <p>Atul Sharma<br>
+           Email:<br>
+           Dr. Snigdha Gupta<br>
+           Email:<br>
+           INUP KGP Email: inup.iitkgp@gmail.com<br>
+           inup@iitkgp.ac.in</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>

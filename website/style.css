@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(logos/iitkgp.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 15px;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12x;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.header li ul.dropdown li{
+    display: block;    
+}
+.header li ul.dropdown {
+    height: 100px;
+    width: 400px;
+    background: transparent;
+    position: absolute;
+    display: none;
+    text-align: left;
+}
+.header li:hover ul.dropdown{
+    display: block;    
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: #fff; 
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 36px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-button:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .header li ul.dropdown {
+        position: relative;
+        text-align: left;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+/*--------slides--------*/
+
+.container{
+    height: 430px;
+    width: 860px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 260px;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    /*box-shadow: 10px 25px 30px rgba(0, 0, 5, 0.3);*/
+}
+.photos{
+    width: 100%;
+    display: flex;
+    animation: slide 50s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(-100%);
+    }
+    10%{
+        transform: translateX(-100%);
+    }
+    15%{
+        transform: translateX(-200%);
+    }
+    20%{
+        transform: translateX(-200%);
+    }
+    25%{
+        transform: translateX(-300%);
+    }
+    30%{
+        transform: translateX(-300%);
+    }
+    35%{
+        transform: translateX(-400%);
+    }
+    40%{
+        transform: translateX(-400%);
+    }
+    45%{
+        transform: translateX(-500%);
+    }
+    50%{
+        transform: translateX(-500%);
+    }
+    55%{
+        transform: translateX(-600%);
+    }
+    60%{
+        transform: translateX(-600%);
+    }
+    65%{
+        transform: translateX(-700%);
+    }
+    70%{
+        transform: translateX(-700%);
+    }
+    75%{
+        transform: translateX(-800%);
+    }
+    80%{
+        transform: translateX(-800%);
+    }
+}
+img{
+    width: 100%;
+}
+@media(max-width: 700px) {
+    .container{
+        height: 175px;
+        width: 350px;
+        top: 140px;
+    }
+    
+}
+
+/*--------about & news--------*/
+.about-news{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.about_news-col{
+    flex-basis: 10%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.scroll-container{
+    border: 3px solid black;
+    border-radius: 5px;
+    /*height: 250px;
+    width: 600px;*/
+    overflow: hidden;
+} 
+.scroll-text {
+height: 100%;
+text-align: center;
+
+/* animation properties */
+-webkit-transform: translateY(100%);
+transform: translateY(100%);
+
+-webkit-animation: my-animation 15s linear infinite;
+animation: my-animation 15s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+from { -webkit-transform: translateY(100%); }
+to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+from {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+to {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+}
+@media(max-width: 700px){
+    .scroll-container{
+        height: 150px;
+        width: 450px;
+    }
+}
+/*--------levels--------*/
+
+.levels{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.level-col{
+    flex-basis: 20%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*--------events--------*/
+
+.events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+p{
+    color: #888;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 10px;
+}
+.event-col{
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.event-col h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.event-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*--------data report--------*/
+
+.data-reports{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.reports{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.reports img{
+    width: 100%;
+}
+
+/*--------footer--------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h5{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: large;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+/*--------------Overview Page--------------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(logos/overview-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.sub-header li ul.dropdown li{
+    display: block;    
+}
+.sub-header li ul.dropdown {
+    height: 100px;
+    width: 400px;
+    background: transparent;
+    position: absolute;
+    display: none;
+    text-align: left;
+}
+.sub-header li:hover ul.dropdown{
+    display: block;    
+}
+.overview{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    padding-bottom: 50px;
+}
+.overview-col p{
+    font-weight: 600;
+}
+.download {
+    color: inherit;
+}
+.how-to-register {
+    text-decoration: underline;
+}
+
+/*--------------Inup team Page--------------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(logos/overview-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.inup-team{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    padding-bottom: 50px;
+}
+.team-col{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.team-col img{
+   width: 100%;
+}
+
+/*-------------- Hackathon --------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(logos/overview-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.hackathon{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    padding-bottom: 50px;
+}
+.hackathon h2{
+    text-align: center;
+}
+.hackathon h4{
+    text-align: center;
+    color: #f44336;
+    font-size: 25px;
+}
+.hackathon-col{
+    flex-basis: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.hackathon-col h2{
+    text-align: center;
+    color: #f44336;
+}
+.hackathon-col h3{
+    text-align: center;
+    font-size: larger;
+}
+.hackathon-col p{
+    font-weight: 600;
+    font-size: large;
+}
+
+/*--------------System Operating Status--------------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(logos/overview-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.status{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    padding-bottom: 50px;
+}
+.status h2{
+    text-align: center;
+    font-size: 30px;
+}
+.status-col{
+    flex-basis: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.status-col img{
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+.status-col h2{
+    margin-top: 150px;
+    text-align: center;
+}
+.status-col h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: green;
+}
+.status-col h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+}
+
+/*--------------Contact--------------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(logos/overview-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    padding-bottom: 50px;
+}
+.contact-col{
+    flex-basis: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.contact-col img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.status-col h2{
+    margin-top: 150px;
+    text-align: center;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logos/inup logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "#">Event</a>
+                        <ul class = "dropdown">
+                            <li><a href = "#">NOC Form</a></li>
+                            <li><a href = "#">Template for Participants Poster Presentation</a></li>
+                            <li><a href = "#">Guidelines</a></li>
+                            <li><a href = "#">Hands-On Training Registration</a></li>
+                            <li><a href = "hackathon.html">Hackathon</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "system operating status.html">Facilities</a></li>
+                    <li><a href = "#">Research Proposal</a>
+                        <ul class = "dropdown">
+                            <li><a href = "#">Form for service - 1 week</a></li>
+                            <li><a href = "#">Form for Short term(Fabriction/Characterization) - 1 week to 3 month</a></li>
+                            <li><a href = "#">Form for Short term(Characterization) - 1 week to 3 month</a></li>
+                            <li><a href = "#">Form for Medium term - 3 to 24 month</a></li>
+                            <li><a href = "#">Declaration Form</a></li>
+                            <li><a href = "#">CV Format</a></li>
+                            <li><a href = "#">Laboratory Safety Form</a></li>
+                            <li><a href = "#">Guidelines</a></li>
+                            <li><a href = "#">Project list</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "#">About Us</a>
+                        <ul class = "dropdown">
+                            <li><a href = "overview.html">Overview</a></li>
+                            <li><a href = "inup team.html">Inup Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Hackathon</h1>
+    </section>
+
+
+
+    <section class="hackathon">
+        <div class="rows">
+            <div class="hackathon-col">
+                <h2>Eligibility</h2>
+                <p>• Minimum 18 years as on 01.01.2023; No upper age limit.<br>
+                   • Applicant should be from academia [Either faculty / Registered student(s)].</p>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="hackathon-col">
+                <h2>Guidelines</h2>
+                <p>• Proposal submission can be done by a single participant or a group of 2-3 team members.<br>
+                   • For details guidelines on registration and proposal submission: inup.iitkgp.ac.in</p>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="hackathon-col">
+                <h2>Important Dates</h2>
+                <p>Submission deadline:<br>
+                    15-08-2023<br>
+
+                    Shortlisting proposals:<br>
+                    31-08-2023<br>
+                    
+                    Demonstration / Presentation & Declaration of results:<br>
+                    25-09-2023</p>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="hackathon-col">
+                <h2>Contact</h2>
+                <h3>Dr Snigdha Gupta</h3>
+                <p>+91 9535181011</p>
+            </div>
+        </div>
+        <h2>Associated Members</h2>
+        <div class="row">
+            <div class="hackathon-col">
+                <h3>• Prof Samit Kumar Ray</h3>
+                <h3>• Prof Tarun Kanti Bhattacharyya</h3>
+                <h3>• Prof Soumen Das</h3>
+                <h3>• Prof Subhasish Basu Majumder</h3>
+            </div>
+            <div class="hackathon-col">
+                <h3>• Prof Dipak Kumar Goswami</h3>
+                <h3>• Prof Prasanta Kumar Guha</h3>
+                <h3>• Prof Shivakiran B N Bhaktha</h3>
+                <h3>• Prof Ayan Roy Chaudhuri</h3>
+            </div>
+        </div>
+        <h4>School of Nano Science and Technology</h4>
+        <div class="rows">
+            <div class="hackathon-col">
+                <h3>IIT Kharagpur, Kharagpur</h3>
+                <h3>West Bengal, India-721302</h3>
+                <h3>inup@iitkgp.ac.in / inup.iitkgp@gmail.com</h3>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <section class="footer">
+        <h5>Learn More</h5>
+        <p>Atul Sharma<br>
+           Email:<br>
+           Dr. Snigdha Gupta<br>
+           Email:<br>
+           INUP KGP Email: inup.iitkgp@gmail.com<br>
+           inup@iitkgp.ac.in</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>
